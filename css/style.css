@@ -176,7 +176,7 @@ blockquote {
 }
 
 #main-slider .carousel .boxed {
-    padding: 10px 0px;
+    padding: 10px 0;
     display: inline-block;
     text-transform: uppercase;
 }

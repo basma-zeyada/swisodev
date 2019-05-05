@@ -176,7 +176,7 @@ blockquote {
 }
 
 #main-slider .carousel .boxed {
-    padding: 10px 15px;
+    padding: 10px 0px;
     display: inline-block;
     text-transform: uppercase;
 }
@@ -1614,6 +1614,10 @@ img.author-box-image {
     padding: 20px 0;
 }
 
+.white-font{
+    color: #fff !important;
+}
+
 #content-wrapper section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -2430,6 +2434,7 @@ img.author-box-image {
 .sol-ico {
     transition: ease all 0.3s;
     padding: 0;
+    filter: grayscale(70%);
 }
 .sol-ico img{
     padding: 0 15px;
@@ -2437,9 +2442,8 @@ img.author-box-image {
 
 .sol-container:hover .sol-ico{
     transform: scale(0.8);
-    filter: grayscale(80%);
-    opacity: 0.7;
     transition: ease all 0.3s;
+    opacity: 0.7;
 
 }
 .sol-container .sol-ico:hover {
@@ -2463,7 +2467,7 @@ img.author-box-image {
 
 .tippy-title{
 	color: #384e73;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
 }
 

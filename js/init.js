@@ -98,55 +98,7 @@ jQuery(document).ready(function($){
   })
   $('[data-toggle="popover"]').popover(); 
 
-  if($(window).width() > 768){
-    tippy('#erp', {
-      content: '<p> <h4 class="tippy-title">ERP</h4>\
-      <p class="tippy-content">Lorem Ipsum je jednostavno probni tekst koji se koristi u tiskarskoj i slovoslagarskoj industriji. <br/> Lorem Ipsum postoji kao industrijski standard još od 16-og stoljeća, kada je nepoznati tiskar uzeo tiskarsku galiju slova i posložio ih da bi napravio knjigu s uzorkom tiska. <br/> Taj je tekst ne samo preživio pet stoljeća, već se i vinuo u svijet elektronskog , ostajući u suštini nepromijenjen. <br/> Postao je popularan tijekom 1960-ih s pojavom Letraset listova s odlomcima Lorem Ipsum-a, a u skorije vrijeme sa software-om <br/> za stolno izdavaštvo kao što je Aldus PageMaker koji također sadrži varijante Lorem Ipsum-a.</p></p>',
-      arrow: true,
-    })
 
-    tippy('#ecommerce', {
-      content: '<p> <h4 class="tippy-title">E-Commerce</h4>\
-      <p class="tippy-content">Lorem Ipsum je jednostavno probni tekst koji se koristi u tiskarskoj i slovoslagarskoj industriji. <br/> Lorem Ipsum postoji kao industrijski standard još od 16-og stoljeća, kada je nepoznati tiskar uzeo tiskarsku galiju slova i posložio ih da bi napravio knjigu s uzorkom tiska. <br/> Taj je tekst ne samo preživio pet stoljeća, već se i vinuo u svijet elektronskog , ostajući u suštini nepromijenjen. <br/> Postao je popularan tijekom 1960-ih s pojavom Letraset listova s odlomcima Lorem Ipsum-a, a u skorije vrijeme sa software-om <br/> za stolno izdavaštvo kao što je Aldus PageMaker koji također sadrži varijante Lorem Ipsum-a.</p></p>',
-      arrow: true,
-    })
-
-    tippy('#elearn', {
-      content: '<p> <h4 class="tippy-title">Training App</h4>\
-      <p class="tippy-content">Lorem Ipsum je jednostavno probni tekst koji se koristi u tiskarskoj i slovoslagarskoj industriji. <br/> Lorem Ipsum postoji kao industrijski standard još od 16-og stoljeća, kada je nepoznati tiskar uzeo tiskarsku galiju slova i posložio ih da bi napravio knjigu s uzorkom tiska. <br/> Taj je tekst ne samo preživio pet stoljeća, već se i vinuo u svijet elektronskog , ostajući u suštini nepromijenjen. <br/> Postao je popularan tijekom 1960-ih s pojavom Letraset listova s odlomcima Lorem Ipsum-a, a u skorije vrijeme sa software-om <br/> za stolno izdavaštvo kao što je Aldus PageMaker koji također sadrži varijante Lorem Ipsum-a.</p></p>',
-      arrow: true,
-    })
-
-    tippy('#Fleet', {
-      content: '<p> <h4 class="tippy-title">Fleet Management</h4>\
-      <p class="tippy-content">Lorem Ipsum je jednostavno probni tekst koji se koristi u tiskarskoj i slovoslagarskoj industriji. <br/> Lorem Ipsum postoji kao industrijski standard još od 16-og stoljeća, kada je nepoznati tiskar uzeo tiskarsku galiju slova i posložio ih da bi napravio knjigu s uzorkom tiska. <br/> Taj je tekst ne samo preživio pet stoljeća, već se i vinuo u svijet elektronskog , ostajući u suštini nepromijenjen. <br/> Postao je popularan tijekom 1960-ih s pojavom Letraset listova s odlomcima Lorem Ipsum-a, a u skorije vrijeme sa software-om <br/> za stolno izdavaštvo kao što je Aldus PageMaker koji također sadrži varijante Lorem Ipsum-a.</p></p>',
-      arrow: true,
-    })
-
-    tippy('#health', {
-      content: '<p> <h4 class="tippy-title">Health Information System</h4>\
-      <p class="tippy-content">Lorem Ipsum je jednostavno probni tekst koji se koristi u tiskarskoj i slovoslagarskoj industriji. <br/> Lorem Ipsum postoji kao industrijski standard još od 16-og stoljeća, kada je nepoznati tiskar uzeo tiskarsku galiju slova i posložio ih da bi napravio knjigu s uzorkom tiska. <br/> Taj je tekst ne samo preživio pet stoljeća, već se i vinuo u svijet elektronskog , ostajući u suštini nepromijenjen. <br/> Postao je popularan tijekom 1960-ih s pojavom Letraset listova s odlomcima Lorem Ipsum-a, a u skorije vrijeme sa software-om <br/> za stolno izdavaštvo kao što je Aldus PageMaker koji također sadrži varijante Lorem Ipsum-a.</p></p>',
-      arrow: true,
-    })
-
-    tippy('#content', {
-      content: '<p> <h4 class="tippy-title">Content Management</h4>\
-      <p class="tippy-content">Lorem Ipsum je jednostavno probni tekst koji se koristi u tiskarskoj i slovoslagarskoj industriji. <br/> Lorem Ipsum postoji kao industrijski standard još od 16-og stoljeća, kada je nepoznati tiskar uzeo tiskarsku galiju slova i posložio ih da bi napravio knjigu s uzorkom tiska. <br/> Taj je tekst ne samo preživio pet stoljeća, već se i vinuo u svijet elektronskog , ostajući u suštini nepromijenjen. <br/> Postao je popularan tijekom 1960-ih s pojavom Letraset listova s odlomcima Lorem Ipsum-a, a u skorije vrijeme sa software-om <br/> za stolno izdavaštvo kao što je Aldus PageMaker koji također sadrži varijante Lorem Ipsum-a.</p></p>',
-      arrow: true,
-    })
-
-    tippy('#business', {
-      content: '<p> <h4 class="tippy-title">Business Intelligence</h4>\
-      <p class="tippy-content">Lorem Ipsum je jednostavno probni tekst koji se koristi u tiskarskoj i slovoslagarskoj industriji. <br/> Lorem Ipsum postoji kao industrijski standard još od 16-og stoljeća, kada je nepoznati tiskar uzeo tiskarsku galiju slova i posložio ih da bi napravio knjigu s uzorkom tiska. <br/> Taj je tekst ne samo preživio pet stoljeća, već se i vinuo u svijet elektronskog , ostajući u suštini nepromijenjen. <br/> Postao je popularan tijekom 1960-ih s pojavom Letraset listova s odlomcima Lorem Ipsum-a, a u skorije vrijeme sa software-om <br/> za stolno izdavaštvo kao što je Aldus PageMaker koji također sadrži varijante Lorem Ipsum-a.</p></p>',
-      arrow: true,
-    })
-
-    tippy('#smart', {
-      content: '<p> <h4 class="tippy-title">Smart Solutions</h4>\
-      <p class="tippy-content">Lorem Ipsum je jednostavno probni tekst koji se koristi u tiskarskoj i slovoslagarskoj industriji. <br/> Lorem Ipsum postoji kao industrijski standard još od 16-og stoljeća, kada je nepoznati tiskar uzeo tiskarsku galiju slova i posložio ih da bi napravio knjigu s uzorkom tiska. <br/> Taj je tekst ne samo preživio pet stoljeća, već se i vinuo u svijet elektronskog , ostajući u suštini nepromijenjen. <br/> Postao je popularan tijekom 1960-ih s pojavom Letraset listova s odlomcima Lorem Ipsum-a, a u skorije vrijeme sa software-om <br/> za stolno izdavaštvo kao što je Aldus PageMaker koji također sadrži varijante Lorem Ipsum-a.</p></p>',
-      arrow: true,
-    })
-  }
 });
 
 

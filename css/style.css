@@ -2437,11 +2437,16 @@ img.author-box-image {
 
 .sol-container:hover .sol-ico{
     transform: scale(0.8);
+    filter: grayscale(80%);
+    opacity: 0.7;
     transition: ease all 0.3s;
+
 }
 .sol-container .sol-ico:hover {
     transform: scale(1.2);
     transition: ease all 0.3s;
+    filter: grayscale(0%);
+    opacity: 1;
 }
 
 

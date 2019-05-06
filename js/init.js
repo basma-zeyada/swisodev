@@ -1,3 +1,5 @@
+
+
 /*-----------------------------------------------------------------------------------*/
 /*  PORTFOLIO
 /*-----------------------------------------------------------------------------------*/
@@ -67,7 +69,7 @@ $(window).scroll(function() {
         }
     });
 
-  	if  ( ($(document).height() - $(window).height()) - $(window).scrollTop() < 1000 ){
+  	if  ( ($(document).height() - $(window).height()) - $(window).scrollTop() < 800 ){
 	    $('#footer-wrapper').css('z-index','4');
 	} else {
 		$('#footer-wrapper').css('z-index','1');
@@ -84,7 +86,7 @@ jQuery(document).ready(function($){
   } else {
       $('.navbar-fixed-top').addClass('opaqued');
   }
-  if  ( ($(document).height() - $(window).height()) - $(window).scrollTop() < 1000 ){
+  if  ( ($(document).height() - $(window).height()) - $(window).scrollTop() < 1400 ){
       $('#footer-wrapper').css('z-index','4');
     } else {
       $('#footer-wrapper').css('z-index','1');

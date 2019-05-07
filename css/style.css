@@ -2471,6 +2471,14 @@ img.author-box-image {
     width: 80%;
     margin: 10px auto;
 	}
+	.about-us-widget {
+    background-size: contain;
+    height: 100px;
+	}
+
+	#bottom .row div:nth-child(2){
+		display: none;
+	}
 }
 
 .sol-ico {

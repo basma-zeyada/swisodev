@@ -2458,12 +2458,19 @@ img.author-box-image {
 }
 
 @media all and (max-width: 768px) {
-    #content-wrapper {
-        margin-bottom: 0 !important;
-    }
-    #footer-wrapper {
-        position: relative !important;
-    }
+	#content-wrapper {
+			margin-bottom: 0 !important;
+	}
+	#footer-wrapper {
+			position: relative !important;
+	}
+	.service-block {
+    margin-left: 15px;
+	}
+	#services .row > div {
+    width: 80%;
+    margin: 10px auto;
+	}
 }
 
 .sol-ico {

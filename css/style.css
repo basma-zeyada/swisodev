@@ -20,7 +20,9 @@
 .pl0{
     padding-left: 0 !important;
 }
-
+.mb0{
+	margin-bottom: 0 !important
+}
 .hide-text {
     font: 0/0 a;
     color: transparent;
@@ -39,7 +41,7 @@
 }
 
 body {
-    color: #444;
+    color: #5e5e5e;
     background: #f5f5f5;
     font-family: Lato, sans-serif;
     font-weight: 300;
@@ -664,7 +666,7 @@ ul.tag-cloud li {
 /*-----------------------------------------------------------------------------------*/
 
 .navbar-inverse {
-    background-color: transparent;
+    background-color: #090d2f;
     border: none;
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
@@ -691,8 +693,7 @@ ul.tag-cloud li {
 .navbar-inverse .navbar-brand {
     font-family: Lato, sans-serif;
     font-size: 36px;
-		line-height: 50px;
-		padding: 0;
+    line-height: 50px;
     color: #fff;
 }
 
@@ -700,72 +701,251 @@ ul.tag-cloud li {
     margin-top: 15px;
     margin-bottom: 15px;
 }
-.navbar-nav * {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transition: all 0.35s ease;
-    transition: all 0.35s ease;
-  }
- 
 
-@media all and (min-width:768px){
-	.navbar-nav li {
-    display: inline-block;
-    list-style: outside none none;
-    margin: 0 1em;
-    padding: 0;
-  }
-  .navbar-nav a {
-    padding: 0.5em 0.8em;
-    margin: 0.2em 0;
-    display: block;
-    color: rgba(255, 255, 255, 0.3);
+.navbar-inverse .navbar-nav > li > a {
     position: relative;
+    display: inline-block;
+    outline: none;
     text-decoration: none;
-  }
-  .navbar-nav a:before,
-  .navbar-nav a:after {
-    height: 12px;
-    width: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    font-size: 15px;
+    padding: 10px;
+    color: #f5f5f5;
+    font-weight: 700;
+    text-shadow: none;
+    -webkit-transition: color .3s;
+    -moz-transition: color .3s;
+    transition: color .3s;
+}
+/* 
+.navbar-inverse .navbar-nav > li > a::before,
+.navbar-inverse .navbar-nav > li > a::after {
     position: absolute;
-    content: '';
-    -webkit-transition: all 0.35s ease;
-    transition: all 0.35s ease;
-    opacity: 0;
-  }
-  .navbar-nav a:before {
     left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity .3s 0 .3s;
+    -moz-transition: opacity .3s 0 .3s;
+    transition: opacity .3s transform .3s;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover::before,
+.navbar-inverse .navbar-nav > li > a:focus::before,
+.navbar-inverse .navbar-nav > li > a:hover::after,
+.navbar-inverse .navbar-nav > li > a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.navbar-inverse .navbar-nav > li > a::before {
     top: 0;
-    border-left: 3px solid #060727;
-    border-top: 3px solid #060727;
-    -webkit-transform: translate(100%, 50%);
-    transform: translate(100%, 50%);
-  }
-  .navbar-nav a:after {
-    right: 0;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+    display: none;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.navbar-inverse .navbar-nav > li > a::after {
     bottom: 0;
-    border-right: 3px solid #060727;
-    border-bottom: 3px solid #060727;
-    -webkit-transform: translate(-100%, -50%);
-    transform: translate(-100%, -50%);
-  }
-  .navbar-nav a:hover,
-  .navbar-nav .current a {
-		color: #ffffff;
-		cursor: pointer;
-  }
-  .navbar-nav a:hover:before,
-  .navbar-nav .current a:before,
-  .navbar-nav a:hover:after,
-  .navbar-nav .current a:after {
-    -webkit-transform: translate(0%, 0%);
-    transform: translate(0%, 0%);
-    opacity: 0.5;
-  }
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    transform: translateY(10px);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.navbar-inverse .navbar-nav > li > a::before,
+.navbar-inverse .navbar-nav > li > a::after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    content: '';
+    opacity: 0;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transition: opacity .3s 0 .3s;
+    -moz-transition: opacity .3s 0 .3s;
+    transition: opacity .3s transform .3s;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav .dropdown-menu {
+    background-color: #202020;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: 0;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.navbar-right .dropdown-menu {
+    right: auto;
+    left: 0;
+}
+
+.navbar-inverse .navbar-nav .dropdown-menu > li > a {
+    padding: 8px 15px;
+    color: #efefef;
+}
+
+.navbar-inverse .navbar-nav .dropdown-menu > li:hover > a,
+.navbar-inverse .navbar-nav .dropdown-menu > li:focus > a,
+.navbar-inverse .navbar-nav .dropdown-menu > li.active > a {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navbar-inverse .navbar-nav .dropdown-menu > li:last-child > a {
+    border-radius: 0 0 3px 3px;
+}
+
+.navbar-inverse .navbar-nav .dropdown-menu > li.divider {
+    background-color: rgba(0, 0, 0, 0.1);
+} */
+
+/* Effect 14: border switch */
+.navbar-inverse .navbar-nav>li>a {
+	padding: 0 20px;
+	height: 45px;
+	line-height: 45px;
+}
+
+.navbar-inverse .navbar-nav>li>a::before,
+.navbar-inverse .navbar-nav>li>a::after {
+	position: absolute;
+	width: 45px;
+	height: 1px;
+	background: #fff;
+	content: '';
+	opacity: 0.1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	pointer-events: none;
+}
+
+.navbar-inverse .navbar-nav>li>a::before {
+	top: 0;
+	left: 0;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+.navbar-inverse .navbar-nav>li>a::after {
+	right: 0;
+	bottom: 0;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transform-origin: 100% 0;
+	-moz-transform-origin: 100% 0;
+	transform-origin: 100% 0;
+}
+
+.navbar-inverse .navbar-nav>li.active>a{
+	background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav>li.active>a::before,
+.navbar-inverse .navbar-nav>li.active>a::after,
+
+.navbar-inverse .navbar-nav>li>a:hover::before,
+.navbar-inverse .navbar-nav>li>a:hover::after,
+.navbar-inverse .navbar-nav>li>a:focus::before,
+.navbar-inverse .navbar-nav>li>a:focus::after {
+	opacity: 1;
+}
+
+.navbar-inverse .navbar-nav>li.active>a::before,
+.navbar-inverse .navbar-nav>li>a:hover::before,
+.navbar-inverse .navbar-nav>li>a:focus::before {
+	left: 50%;
+	-webkit-transform: rotate(0deg) translateX(-50%);
+	-moz-transform: rotate(0deg) translateX(-50%);
+	transform: rotate(0deg) translateX(-50%);
+}
+
+.navbar-inverse .navbar-nav>li.active>a::after,
+.navbar-inverse .navbar-nav>li>a:hover::after,
+.navbar-inverse .navbar-nav>li>a:focus::after {
+	right: 50%;
+	-webkit-transform: rotate(0deg) translateX(50%);
+	-moz-transform: rotate(0deg) translateX(50%);
+	transform: rotate(0deg) translateX(50%);
+}
+
+
+.opaqued {
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px;
+}
+
+.navbar-inverse.opaqued .navbar-nav .dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.6);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
 .navbar-brand {
   padding: 0;
 }
-}
+
 
 /*-----------------------------------------------------------------------------------*/
 
@@ -1074,7 +1254,7 @@ ul.tag-cloud li {
 
 .modal#loginForm {
     width: 600px;
-    margin-left: -300px;
+    margin-left: -285px;
 }
 
 .modal .modal-header {
@@ -2161,7 +2341,6 @@ img.author-box-image {
 .navbar-inverse .navbar-nav > li > a {
     letter-spacing: 1px;
     font-size: 15px;
-    padding: 15px 5px 10px;
     color: #f5f5f5;
     font-weight: 400;
 }
@@ -2447,4 +2626,249 @@ img.author-box-image {
     color: #fff;
     transform: scale(1.5);
     transition: ease all 0.3s;
+}
+
+
+
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.margin-top-15 {
+    margin-top: 15px;
+}
+
+.balance {
+    line-height: 1em;
+    font-size:2.5em
+}
+
+.title {
+    color: #a0aeb6;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/** Let tabls-left class be available in bootstrap 3.3.7 - I **/
+.tabs-left > .nav-tabs {
+  border-bottom: 0;
+}
+
+.tab-content > .tab-pane {
+  display: none;
+}
+
+.tab-content > .active {
+  display: block;
+}
+
+.tabs-left > .nav-tabs > li {
+  float: none;
+}
+
+.tabs-left > .nav-tabs > li > a,
+.tabs-left > .nav-tabs > li > div {
+  margin-right: 0;
+  margin-bottom: 3px;
+}
+
+.tabs-left > .nav-tabs {
+  float: left;
+  margin-right: 19px;
+  border-right: 1px solid #ddd;
+}
+
+.tabs-left > .nav-tabs > li > a,
+.tabs-left > .nav-tabs > li > div {
+  margin-right: -1px;
+  -webkit-border-radius: 4px 0 0 4px;
+     -moz-border-radius: 4px 0 0 4px;
+          border-radius: 4px 0 0 4px;
+}
+
+.tabs-left > .nav-tabs > li > a:hover,
+.tabs-left > .nav-tabs > li > a:focus,
+.tabs-left > .nav-tabs > li > div:hover,
+.tabs-left > .nav-tabs > li > div:focus{
+  border-color: #eeeeee #dddddd #eeeeee #eeeeee;
+  background-color: #eeeeee;
+}
+
+.tabs-left > .nav-tabs .active > a,
+.tabs-left > .nav-tabs .active > a:hover,
+.tabs-left > .nav-tabs .active > a:focus,
+.tabs-left > .nav-tabs .active > div,
+.tabs-left > .nav-tabs .active > div:hover,
+.tabs-left > .nav-tabs .active > div:focus{
+  border-color: #ddd transparent #ddd #ddd;
+  *border-right-color: #ffffff;
+}
+/** Let tabls-left class be available in bootstrap 3.3.7 - F **/
+
+.account-type
+{
+    color: #384e73;
+    font-size: 1.3em;
+    font-weight: bold;
+		line-height: 18px;
+}
+
+.account-link
+{
+	font-size: 0.85em;
+	/*line-height: 1em;*/
+}
+
+/* TABS */
+.tabs-left > .nav-tabs{
+    margin-right:0px;
+    padding: 0;
+    height: 100%; /* 700px - Debe ser el mismo height que el que tenga .tab-content */
+}
+
+/* CONTENIDO DE LOS TABS */
+#about-us .tab-content {
+    border-left-style: none;
+    height: 100%;
+    min-height: 285px;
+    border-radius: 0px 4px 4px 4px;
+    -moz-border-radius: 0px 4px 4px 4px;
+    -webkit-border-radius: 0px 4px 4px 4px;
+}
+
+#about-us .tab-content p{
+	line-height: 1.2;
+}
+
+.tab-content > div {
+    margin-top: 26px;
+}
+
+/* Formato del tab activo */
+.tabs-left > .nav-tabs .active > a, 
+.tabs-left > .nav-tabs .active > a:hover, 
+.tabs-left > .nav-tabs .active > a:focus,
+
+.tabs-left > .nav-tabs .active div, 
+.tabs-left > .nav-tabs .active div:hover, 
+.tabs-left > .nav-tabs .active div:focus
+{
+    
+    border-bottom-style: none;
+    border-left-style: none;
+    border-bottom-left-radius: 0px;
+    border-right-style: none;
+    margin-right: -1px;
+}
+
+/* Formato de los tabs en general */
+.tabs-left > .nav-tabs > li:nth-child(1) > a,
+.tabs-left > .nav-tabs > li:nth-child(1) > a:hover,
+.tabs-left > .nav-tabs > li:nth-child(1) > a:focus,
+
+.tabs-left > .nav-tabs > li:nth-child(1) > div,
+.tabs-left > .nav-tabs > li:nth-child(1) > div:hover,
+.tabs-left > .nav-tabs > li:nth-child(1) > div:focus 
+{
+    cursor: pointer;
+    border-top-left-radius: 4px;
+}
+
+.tabs-left > .nav-tabs > li.active:nth-child(1) > a,
+.tabs-left > .nav-tabs > li.active:nth-child(1) > a:hover,
+.tabs-left > .nav-tabs > li.active:nth-child(1) > a:focus,
+
+.tabs-left > .nav-tabs > li.active:nth-child(1) > div,
+.tabs-left > .nav-tabs > li.active:nth-child(1) > div:hover,
+.tabs-left > .nav-tabs > li.active:nth-child(1) > div:focus 
+{
+    border-top-left-radius: 4px;
+    border-bottom-style: none;
+}
+
+.tabs-left > .nav-tabs > li > a, 
+.tabs-left > .nav-tabs > li > div {
+    /*display:block;*/
+    /*display: table;*/
+    /*border: solid 1px transparent;*/
+    margin-right: -1px;
+    margin-bottom: -1px;
+    border-radius: 0px;
+}
+
+.tabbable.tabs-left > .nav-tabs > li > div > div {
+    display:block;
+    width: 100%;
+    padding: 1em;
+    min-height: 6em;
+		text-align: center;
+		display: flex;
+    justify-content: center;
+		align-items: center;
+		border-bottom: 1px solid #ddd;
+}
+
+.tabbable.tabs-left li{
+	transition: ease all 0.3s;
+	opacity: 0.5;
+	cursor: pointer;
+}
+.tabbable.tabs-left  li.active, .tabbable.tabs-left li:hover, .tabbable.tabs-left li:focus{
+	opacity: 1;
+	transition: ease all 0.3s;
+}
+
+.tabbable.tabs-left li .far::before{
+	content: "\f111";
+}
+
+.tabbable.tabs-left li.active .far::before{
+	content: "\f192";
+
+}
+
+.technology .tab-group-title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 285px;
+	border-right: 1px solid #ddd;
+	color: #384e73;
+	margin-bottom: 0;
+}
+
+.technology{
+	background-color: #fff;
+	border: 1px solid #ddd;
+	box-shadow: 0px 0px 10px 0px #ddd;
+}
+
+@media all and (max-width: 768px){
+	.technology .nav-pills.nav-stacked, .technology .tab-content {
+		margin-left: 20px;
+	}
+	.tab-group-title {
+		min-height: 60px !important;
+    border-bottom: 1px solid #ececec;
+    margin-bottom: 20px !important;
+    padding-bottom: 10px;
+	}
+	.technology{
+		margin: 0 20px !important;
+	}
+	#about-us .tab-content {
+		min-height: fit-content;
+		padding-left: 20px !important;
+	}
+	.tabbable.tabs-left li .far{
+		font-size: 0.8em;
+	}
+
+	.tabbable.tabs-left li {
+    padding: 5px;
+    background-color: #eef2f7;
+	}
 }

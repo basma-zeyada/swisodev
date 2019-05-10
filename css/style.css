@@ -2518,6 +2518,14 @@ img.author-box-image {
     margin-bottom: 20px !important;
     padding-bottom: 10px;
 	}
+	.nav-tabs.nav-justified>li {
+    float: none;
+    display: table-cell;
+    width: 1%;
+	}
+	.nav-tabs.nav-justified>li>a{
+		font-size: 20px;
+	}
 }
 
 .sol-ico {

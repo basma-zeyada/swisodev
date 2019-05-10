@@ -2526,6 +2526,9 @@ img.author-box-image {
 	.nav-tabs.nav-justified>li>a{
 		font-size: 20px;
 	}
+	.talkBusiness .btn {
+		margin: 10px 10px;
+	}
 }
 
 .sol-ico {

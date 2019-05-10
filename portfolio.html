@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="SWESOdev official website">
     <meta name="author" content="">
     <title>About Us | SWISO</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -22,13 +22,6 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114x114.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/images/ico/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57x57.png">
-
-    <script type="text/javascript">
-    jQuery(document).ready(function($){
-    'use strict';
-        jQuery('body').backstretch("images/bg/bk.png");
-    });
-    </script>
 </head><!--/head-->
 <body>
 <div id="preloader"></div>
@@ -52,7 +45,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about-us.html">Company</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html">Case studies</a></li>
+                    <li class="active"><a href="portfolio.html">Case studies</a></li>
                     
                     <li><a href="contact-us.html">Contact us</a></li>
                 </ul>
@@ -60,80 +53,105 @@
         </div>
     </header><!--/header-->
 
-    <section id="single-page-slider" class="no-margin">
-        <div class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="item active">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="center gap fade-down section-heading">
-                                    <h2 class="main-title white-font">Case Studied</h2>
-                                    <hr>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quis, perferendis a recusandae neque ipsum culpa,</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--/.item-->
-            </div><!--/.carousel-inner-->
-        </div><!--/.carousel-->
-    </section><!--/#main-slider-->
-
     <div id="content-wrapper">
         <div id="solutions" class="white">
 					<div class="container-fluid">
-							<div class="carousel slide" data-ride="carousel" id="quote-carousel">
+							<div class="carousel slide carousel-fade" data-ride="carousel" id="quote-carousel">
 								<!-- Bottom Carousel Indicators -->
 								<ol class="carousel-indicators vertical">
-										<li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
-										<li data-target="#quote-carousel" data-slide-to="1"></li>
-										<li data-target="#quote-carousel" data-slide-to="2"></li>
+										<li data-target="#quote-carousel" data-toggle="tooltip" title="Enterprise Resource Planning" data-placement="top" data-slide-to="0" class="active"></li>
+										<li data-target="#quote-carousel" data-toggle="tooltip" title="E-commerce" data-placement="top" data-slide-to="1"></li>
+										<li data-target="#quote-carousel" data-toggle="tooltip" title="Training App" data-placement="top" data-slide-to="2"></li>
+										<li data-target="#quote-carousel" data-toggle="tooltip" title="Fleet Management" data-placement="top" data-slide-to="3"></li>
+										<li data-target="#quote-carousel" data-toggle="tooltip" title="Health Information System" data-placement="top" data-slide-to="4"></li>
+										<li data-target="#quote-carousel" data-toggle="tooltip" title="Contant Management" data-placement="top" data-slide-to="5"></li>
+										<li data-target="#quote-carousel" data-toggle="tooltip" title="Business Intelligent" data-placement="top" data-slide-to="6"></li>
+										<li data-target="#quote-carousel" data-toggle="tooltip" title="Smart Solutions" data-placement="top" data-slide-to="7"></li>
 								</ol>
 								<!-- Carousel Slides / Quotes -->
-								<div class="carousel-inner">
+								<div class="carousel-inner solutions-carousel">
 									<!-- Quote 1 -->
 										<div class="item active">
-												<blockquote>
-														<div class="row">
-																<div class="col-sm-3 text-center">
-																		<img class="img-responsive" src="https://ejust.edu.eg/wp-content/plugins/awsm-team-pro/images/default-user.png" style="width: 100px;height:100px;">
-																</div>
-																<div class="col-sm-9">
-																		<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
-																		<small>Someone famous</small>
-																</div>
-														</div>
-												</blockquote>
+											<div class="col-md-12" style="background: url('images/solutions/bg/erp.png')">
+												<div class="left gap animated fadeInLeft  sol-content col-sm-6 col-sm-offset-1 white-font">
+														<h2 class=" white-font">Enterprise Resource Planning</h2>
+														<hr>
+														<p>Lorem Ipsum és un text de farciment usat per la indústria de la tipografia i la impremta. Lorem Ipsum ha estat el text estàndard de la indústria des de l'any 1500, quan un impressor desconegut va fer servir una galerada de text i la va mesclar per crear un llibre de mostres tipogràfiques. No només ha sobreviscut cinc segles, sinó que ha fet el salt cap a la creació de tipus de lletra electrònics, romanent essencialment sense canvis. Es va popularitzar l'any 1960 amb el llançament de fulls Letraset que contenien passatges de Lorem Ipsum, i més recentment amb programari d'autoedició com Aldus Pagemaker que inclou versions de Lorem Ipsum.</p>
+												</div>
+											</div>
 										</div>
-										<!-- Quote 2 -->
+
 										<div class="item">
-												<blockquote>
-														<div class="row">
-																<div class="col-sm-3 text-center">
-																		<img class="img-responsive" src="https://ejust.edu.eg/wp-content/plugins/awsm-team-pro/images/default-user.png" style="width: 100px;height:100px;">
-																</div>
-																<div class="col-sm-9">
-																		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.</p>
-																		<small>Someone famous</small>
-																</div>
-														</div>
-												</blockquote>
+											<div class="col-md-12" style="background: url('images/solutions/bg/ecommerce.png')">
+												<div class="left gap animated fadeInLeft sol-content col-sm-6 col-sm-offset-1 white-font">
+														<h2 class=" white-font">E-Commerce</h2>
+														<hr>
+														<p>Lorem Ipsum és un text de farciment usat per la indústria de la tipografia i la impremta. Lorem Ipsum ha estat el text estàndard de la indústria des de l'any 1500, quan un impressor desconegut va fer servir una galerada de text i la va mesclar per crear un llibre de mostres tipogràfiques. No només ha sobreviscut cinc segles, sinó que ha fet el salt cap a la creació de tipus de lletra electrònics, romanent essencialment sense canvis. Es va popularitzar l'any 1960 amb el llançament de fulls Letraset que contenien passatges de Lorem Ipsum, i més recentment amb programari d'autoedició com Aldus Pagemaker que inclou versions de Lorem Ipsum.</p>
+												</div>
+											</div>
 										</div>
-										<!-- Quote 3 -->
+										
 										<div class="item">
-												<blockquote>
-														<div class="row">
-																<div class="col-sm-3 text-center">
-																		<img class="img-responsive" src="https://ejust.edu.eg/wp-content/plugins/awsm-team-pro/images/default-user.png" style="width: 100px;height:100px;">
-																</div>
-																<div class="col-sm-9">
-																		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium mauris.</p>
-																		<small>Someone famous</small>
-																</div>
-														</div>
-												</blockquote>
+											<div class="col-md-12" style="background: url('images/solutions/bg/training.png')">
+												<div class="left gap animated fadeInLeft sol-content col-sm-6 col-sm-offset-1 white-font">
+														<h2 class=" white-font">Training App</h2>
+														<hr>
+														<p>Lorem Ipsum és un text de farciment usat per la indústria de la tipografia i la impremta. Lorem Ipsum ha estat el text estàndard de la indústria des de l'any 1500, quan un impressor desconegut va fer servir una galerada de text i la va mesclar per crear un llibre de mostres tipogràfiques. No només ha sobreviscut cinc segles, sinó que ha fet el salt cap a la creació de tipus de lletra electrònics, romanent essencialment sense canvis. Es va popularitzar l'any 1960 amb el llançament de fulls Letraset que contenien passatges de Lorem Ipsum, i més recentment amb programari d'autoedició com Aldus Pagemaker que inclou versions de Lorem Ipsum.</p>
+												</div>
+											</div>
 										</div>
+
+										<div class="item">
+											<div class="col-md-12" style="background: url('images/solutions/bg/fleet.png')">
+												<div class="left gap animated fadeInLeft sol-content col-sm-6 col-sm-offset-1 white-font">
+														<h2 class=" white-font">Fleet Management</h2>
+														<hr>
+														<p>Lorem Ipsum és un text de farciment usat per la indústria de la tipografia i la impremta. Lorem Ipsum ha estat el text estàndard de la indústria des de l'any 1500, quan un impressor desconegut va fer servir una galerada de text i la va mesclar per crear un llibre de mostres tipogràfiques. No només ha sobreviscut cinc segles, sinó que ha fet el salt cap a la creació de tipus de lletra electrònics, romanent essencialment sense canvis. Es va popularitzar l'any 1960 amb el llançament de fulls Letraset que contenien passatges de Lorem Ipsum, i més recentment amb programari d'autoedició com Aldus Pagemaker que inclou versions de Lorem Ipsum.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="item">
+											<div class="col-md-12" style="background: url('images/solutions/bg/health.png')">
+												<div class="left gap animated fadeInLeft sol-content col-sm-6 col-sm-offset-1 white-font">
+														<h2 class=" white-font">Health Information System</h2>
+														<hr>
+														<p>Lorem Ipsum és un text de farciment usat per la indústria de la tipografia i la impremta. Lorem Ipsum ha estat el text estàndard de la indústria des de l'any 1500, quan un impressor desconegut va fer servir una galerada de text i la va mesclar per crear un llibre de mostres tipogràfiques. No només ha sobreviscut cinc segles, sinó que ha fet el salt cap a la creació de tipus de lletra electrònics, romanent essencialment sense canvis. Es va popularitzar l'any 1960 amb el llançament de fulls Letraset que contenien passatges de Lorem Ipsum, i més recentment amb programari d'autoedició com Aldus Pagemaker que inclou versions de Lorem Ipsum.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="item">
+											<div class="col-md-12" style="background: url('images/solutions/bg/content.png')">
+												<div class="left gap animated fadeInLeft sol-content col-sm-6 col-sm-offset-1 white-font">
+														<h2 class=" white-font">Content Management</h2>
+														<hr>
+														<p>Lorem Ipsum és un text de farciment usat per la indústria de la tipografia i la impremta. Lorem Ipsum ha estat el text estàndard de la indústria des de l'any 1500, quan un impressor desconegut va fer servir una galerada de text i la va mesclar per crear un llibre de mostres tipogràfiques. No només ha sobreviscut cinc segles, sinó que ha fet el salt cap a la creació de tipus de lletra electrònics, romanent essencialment sense canvis. Es va popularitzar l'any 1960 amb el llançament de fulls Letraset que contenien passatges de Lorem Ipsum, i més recentment amb programari d'autoedició com Aldus Pagemaker que inclou versions de Lorem Ipsum.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="item">
+											<div class="col-md-12" style="background: url('images/solutions/bg/business.png')">
+												<div class="left gap animated fadeInLeft sol-content col-sm-6 col-sm-offset-1 white-font">
+														<h2 class=" white-font">Business Intelligent</h2>
+														<hr>
+														<p>Lorem Ipsum és un text de farciment usat per la indústria de la tipografia i la impremta. Lorem Ipsum ha estat el text estàndard de la indústria des de l'any 1500, quan un impressor desconegut va fer servir una galerada de text i la va mesclar per crear un llibre de mostres tipogràfiques. No només ha sobreviscut cinc segles, sinó que ha fet el salt cap a la creació de tipus de lletra electrònics, romanent essencialment sense canvis. Es va popularitzar l'any 1960 amb el llançament de fulls Letraset que contenien passatges de Lorem Ipsum, i més recentment amb programari d'autoedició com Aldus Pagemaker que inclou versions de Lorem Ipsum.</p>
+												</div>
+											</div>
+										</div>
+
+										
+										<div class="item">
+											<div class="col-md-12" style="background: url('images/solutions/bg/smart.png')">
+												<div class="left gap animated fadeInLeft sol-content col-sm-6 col-sm-offset-1 white-font">
+														<h2 class=" white-font">Smart Solutions</h2>
+														<hr>
+														<p>Lorem Ipsum és un text de farciment usat per la indústria de la tipografia i la impremta. Lorem Ipsum ha estat el text estàndard de la indústria des de l'any 1500, quan un impressor desconegut va fer servir una galerada de text i la va mesclar per crear un llibre de mostres tipogràfiques. No només ha sobreviscut cinc segles, sinó que ha fet el salt cap a la creació de tipus de lletra electrònics, romanent essencialment sense canvis. Es va popularitzar l'any 1960 amb el llançament de fulls Letraset que contenien passatges de Lorem Ipsum, i més recentment amb programari d'autoedició com Aldus Pagemaker que inclou versions de Lorem Ipsum.</p>
+												</div>
+											</div>
+										</div>
+
 								</div>
 						</div>
 					</div>
@@ -210,6 +228,11 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/plugins.js"></script>
-    <script src="js/init.js"></script>
+		<script src="js/init.js"></script>
+		<script>
+		$(function(){
+			$('[data-toggle="tooltip"]').tooltip();
+		})
+		</script>
 </body>
 </html>

@@ -179,9 +179,9 @@ blockquote .small, blockquote footer, blockquote small {
     z-index: 10px;
 }
 
-#main-slider .carousel .btn:hover {
+#main-slider .carousel .btn:hover, .talkBusiness .btn:hover {
     background-color: rgba(255, 255, 255, 0.9);
-    color: #202020;
+    color: #090d2f;
 }
 
 #main-slider .carousel .boxed {
@@ -2390,7 +2390,7 @@ img.author-box-image {
   min-height: 510px !important;
 }
 
-#main-slider .carousel .btn {
+#main-slider .carousel .btn , .talkBusiness .btn{
     border: 3px solid rgba(255, 255, 255, 0.9);
     color: #fff;
     border-radius: 0;
@@ -2401,6 +2401,11 @@ img.author-box-image {
     padding: 10px 15px;
     text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px;
     letter-spacing: 4px;
+}
+
+.talkBusiness .btn {
+	margin: 0 10px;
+	font-size: 16px;
 }
 
 #tagWrapper {
@@ -2457,6 +2462,17 @@ img.author-box-image {
     line-height: 1;
 }
 
+.talkBusiness {
+	min-height: 100px;
+	background-color: #090d2f;
+	color: #fff;
+}
+
+.talkBusiness h3{
+	margin: 0;
+	padding: 30px 0 10px;
+}
+
 @media all and (max-width: 768px) {
 	#content-wrapper {
 			margin-bottom: 0 !important;
@@ -2492,6 +2508,15 @@ img.author-box-image {
 	}
 	#main-slider .carousel .btn {
 		font-size: 12px;
+	}
+	.tab-group-title {
+    min-height: 60px !important;
+    border-bottom: 1px solid #ececec;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(236, 236, 236);
+    margin-bottom: 20px !important;
+    padding-bottom: 10px;
 	}
 }
 
@@ -2895,12 +2920,6 @@ img.author-box-image {
 			padding: 15px;
 	}
 }
-	.tab-group-title {
-		min-height: 60px !important;
-    border-bottom: 1px solid #ececec;
-    margin-bottom: 20px !important;
-    padding-bottom: 10px;
-	}
 	.technology{
 		margin: 0 20px !important;
 	}
@@ -2913,6 +2932,5 @@ img.author-box-image {
 	}
 
 	.tabbable.tabs-left li {
-    padding: 5px;
     background-color: #eef2f7;
 	}

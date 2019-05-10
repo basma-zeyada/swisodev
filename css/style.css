@@ -137,7 +137,6 @@ blockquote .small, blockquote footer, blockquote small {
 .center-block{
     float: none;
 }
-
 /*-----------------------------------------------------------------------------------*/
 
 
@@ -718,135 +717,6 @@ ul.tag-cloud li {
     -moz-transition: color .3s;
     transition: color .3s;
 }
-/* 
-.navbar-inverse .navbar-nav > li > a::before,
-.navbar-inverse .navbar-nav > li > a::after {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: #fff;
-    content: '';
-    opacity: 0;
-    -webkit-transition: opacity .3s 0 .3s;
-    -moz-transition: opacity .3s 0 .3s;
-    transition: opacity .3s transform .3s;
-    -webkit-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
-    transform: translateY(-10px);
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    -ms-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-}
-
-.navbar-inverse .navbar-nav > li > a:hover::before,
-.navbar-inverse .navbar-nav > li > a:focus::before,
-.navbar-inverse .navbar-nav > li > a:hover::after,
-.navbar-inverse .navbar-nav > li > a:focus::after {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    transform: translateY(0px);
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    -ms-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-}
-
-.navbar-inverse .navbar-nav > li > a::before {
-    top: 0;
-    -webkit-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
-    transform: translateY(-10px);
-    display: none;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    -ms-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-}
-
-.navbar-inverse .navbar-nav > li > a::after {
-    bottom: 0;
-    -webkit-transform: translateY(10px);
-    -moz-transform: translateY(10px);
-    transform: translateY(10px);
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    -ms-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-}
-
-.navbar-inverse .navbar-nav > li > a::before,
-.navbar-inverse .navbar-nav > li > a::after {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: #fff;
-    content: '';
-    opacity: 0;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    -ms-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-    -webkit-transition: opacity .3s 0 .3s;
-    -moz-transition: opacity .3s 0 .3s;
-    transition: opacity .3s transform .3s;
-    -webkit-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
-    transform: translateY(-10px);
-}
-
-.navbar-inverse .navbar-nav > .active > a,
-.navbar-inverse .navbar-nav > .active > a:hover,
-.navbar-inverse .navbar-nav > .active > a:focus,
-.navbar-inverse .navbar-nav > .open > a,
-.navbar-inverse .navbar-nav > .open > a:hover,
-.navbar-inverse .navbar-nav > .open > a:focus {
-    background-color: transparent;
-}
-
-.navbar-inverse .navbar-nav .dropdown-menu {
-    background-color: #202020;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    border: 0;
-    padding: 0;
-    margin-top: 15px;
-}
-
-.navbar-right .dropdown-menu {
-    right: auto;
-    left: 0;
-}
-
-.navbar-inverse .navbar-nav .dropdown-menu > li > a {
-    padding: 8px 15px;
-    color: #efefef;
-}
-
-.navbar-inverse .navbar-nav .dropdown-menu > li:hover > a,
-.navbar-inverse .navbar-nav .dropdown-menu > li:focus > a,
-.navbar-inverse .navbar-nav .dropdown-menu > li.active > a {
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-.navbar-inverse .navbar-nav .dropdown-menu > li:last-child > a {
-    border-radius: 0 0 3px 3px;
-}
-
-.navbar-inverse .navbar-nav .dropdown-menu > li.divider {
-    background-color: rgba(0, 0, 0, 0.1);
-} */
-
-/* Effect 14: border switch */
 .navbar-inverse .navbar-nav>li>a {
 	padding: 0 20px;
 	height: 45px;
@@ -889,7 +759,7 @@ ul.tag-cloud li {
 	transform-origin: 100% 0;
 }
 
-.navbar-inverse .navbar-nav>li.active>a{
+.navbar-inverse .navbar-nav>li.active>a,.navbar-inverse .navbar-nav>.active>a:hover{
 	background-color: transparent;
 }
 
@@ -1134,7 +1004,6 @@ ul.tag-cloud li {
     position: absolute;
     top:0;
     left: 0;
-    opacity: 0;
     display: flex;
     align-items: center;
     padding: 0 10px;
@@ -1149,16 +1018,22 @@ ul.tag-cloud li {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0;
 		transition: ease all 0.5s;
 }
 
-.service-block:hover:before{
+.home .service-block::before{
+	opacity: 0;
+}
+.home .service-back{
+	opacity: 0
+}
+
+.home .service-block:hover:before{
   opacity: 1;
 	transition: ease all 0.5s;
 }
 
-.service-block:hover .service-back{
+.home .service-block:hover .service-back{
 	opacity: 1;
 	transition: ease all 0.5s;
 }
@@ -2169,7 +2044,8 @@ img.author-box-image {
 }
 
 #quote-carousel .carousel-indicators .active {
-    background: #333;
+		background: #384e73;
+		height: 18px;
 }
 
 #quote-carousel img {
@@ -2371,7 +2247,9 @@ img.author-box-image {
 }
 
 .section-heading p {
-  text-transform: uppercase;
+	text-transform: uppercase;
+	max-width: 70%;
+  margin: 0 auto;
 }
 
 #content-wrapper {
@@ -2387,7 +2265,7 @@ img.author-box-image {
 }
 
 #single-page-slider {
-  min-height: 510px !important;
+  min-height: 440px !important;
 }
 
 #main-slider .carousel .btn , .talkBusiness .btn{
@@ -2820,6 +2698,17 @@ img.author-box-image {
 	background-color: #eef2f7;
 }
 
+.carousel-indicators.vertical li {
+	display: block;
+}
+.carousel-indicators.vertical {
+	right: 0 !important;
+	width: 20px;
+	margin: 0 !important;
+	left: 100%;
+	top: 40% !important;
+}
+
 @media all and (max-width: 768px){
 	.technology .nav-pills.nav-stacked, .technology .tab-content {
 		margin-left: 20px;
@@ -2918,9 +2807,6 @@ img.author-box-image {
 }
 
 @media screen and (max-width:769px) {
-    #quote-carousel .carousel-indicators {
-        bottom: -20px !important;
-    }
     #quote-carousel .carousel-indicators li {
         display: inline-block;
         margin: 0 5px;
@@ -2929,7 +2815,6 @@ img.author-box-image {
     }
     #quote-carousel .carousel-indicators li.active {
         margin: 0 5px;
-        width: 20px;
         height: 20px;
 		}
 		.navbar{
@@ -2938,6 +2823,9 @@ img.author-box-image {
 		.navbar-brand>img {
 			width: 150px;
 			padding: 15px;
+	}
+	.carousel-indicators.vertical {
+		left: 95%;
 	}
 }
 

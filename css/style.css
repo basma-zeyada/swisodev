@@ -2705,8 +2705,20 @@ img.author-box-image {
 	right: 0 !important;
 	width: 20px;
 	margin: 0 !important;
-	left: 100%;
+	left: 95%;
 	top: 40% !important;
+}
+
+#solutions{
+	padding: 0;
+}
+
+#solutions .container-fluid{
+	padding: 0;
+}
+
+#solutions .carousel-inner{
+	background: url(../images/bg/intro.png) center center no-repeat;
 }
 
 @media all and (max-width: 768px){
@@ -2715,59 +2727,76 @@ img.author-box-image {
 	}
 	#content-wrapper {
 		margin-bottom: 0 !important;
-}
-#footer-wrapper {
-		position: relative !important;
-		padding-top: 10px;
-}
+	}
+	#footer-wrapper {
+			position: relative !important;
+			padding-top: 10px;
+	}
 
-.service-block {
-	margin-left: 15px;
-}
-#services .row > div {
-	width: 80%;
-	margin: 10px auto;
-}
-.about-us-widget {
-	background-size: 50%;
-	height: 100px;
-	background-position: 0;
-}
+	.service-block {
+		margin-left: 15px;
+	}
+	#services .row > div {
+		width: 80%;
+		margin: 10px auto;
+	}
+	.about-us-widget {
+		background-size: 50%;
+		height: 100px;
+		background-position: 0;
+	}
 
-#bottom .row > div:nth-of-type(3), #bottom .row > div:nth-of-type(2){
-	display: none;
-}
+	#bottom .row > div:nth-of-type(3), #bottom .row > div:nth-of-type(2){
+		display: none;
+	}
 
-.main-title{
-	font-size: 24px;
-}
-#awards img {
-	width: 100px !important;
-	margin: 0 auto 20px !important;
-}
-#main-slider .carousel .btn {
-	font-size: 12px;
-}
-.tab-group-title {
-	min-height: 60px !important;
-	border-bottom: 1px solid #ececec;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: rgb(236, 236, 236);
-	margin-bottom: 20px !important;
-	padding-bottom: 10px;
-}
-.nav-tabs.nav-justified>li {
-	float: none;
-	display: table-cell;
-	width: 1%;
-}
-.nav-tabs.nav-justified>li>a{
-	font-size: 20px !important;
-}
-.talkBusiness .btn {
-	margin: 10px 10px;
-}
+	.main-title{
+		font-size: 24px;
+	}
+	#awards img {
+		width: 100px !important;
+		margin: 0 auto 20px !important;
+	}
+	#main-slider .carousel .btn {
+		font-size: 12px;
+	}
+	.tab-group-title {
+		min-height: 60px !important;
+		border-bottom: 1px solid #ececec;
+		border-bottom-width: 1px;
+		border-bottom-style: solid;
+		border-bottom-color: rgb(236, 236, 236);
+		margin-bottom: 20px !important;
+		padding-bottom: 10px;
+	}
+	.nav-tabs.nav-justified>li {
+		float: none;
+		display: table-cell;
+		width: 1%;
+	}
+	.nav-tabs.nav-justified>li>a{
+		font-size: 20px !important;
+	}
+	.talkBusiness .btn {
+		margin: 10px 10px;
+	}
+	#quote-carousel .carousel-indicators li {
+		display: inline-block;
+		margin: 0 5px;
+		width: 15px;
+		height: 15px;
+	}
+	#quote-carousel .carousel-indicators li.active {
+		margin: 0 5px;
+		height: 20px;
+	}
+	.navbar{
+		padding: 5px 0;
+	}
+	.navbar-brand>img {
+		width: 150px;
+		padding: 15px;
+	}
 }
 	
 @media all and (min-width: 992px){
@@ -2805,27 +2834,3 @@ img.author-box-image {
         height: 100vh;
     }
 }
-
-@media screen and (max-width:769px) {
-    #quote-carousel .carousel-indicators li {
-        display: inline-block;
-        margin: 0 5px;
-        width: 15px;
-        height: 15px;
-    }
-    #quote-carousel .carousel-indicators li.active {
-        margin: 0 5px;
-        height: 20px;
-		}
-		.navbar{
-			padding: 5px 0;
-		}
-		.navbar-brand>img {
-			width: 150px;
-			padding: 15px;
-	}
-	.carousel-indicators.vertical {
-		left: 95%;
-	}
-}
-

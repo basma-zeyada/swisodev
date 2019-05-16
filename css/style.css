@@ -2050,7 +2050,6 @@ img.author-box-image {
 
 #quote-carousel .carousel-indicators .active {
 		background: #384e73;
-		height: 18px;
 }
 
 #quote-carousel img {
@@ -2377,45 +2376,44 @@ div#mapwrapper:before {
     padding: 0 15px;
 }
 
-.sol-container:hover .sol-ico{
-    transform: scale(0.8);
+.sol-container ul:hover .sol-ico:not(.active){
     transition: ease all 0.3s;
     opacity: 0.7;
 
 }
-.sol-container .sol-ico:hover {
-    transform: scale(1.2);
+
+.sol-container ul:hover .sol-ico:not(.active) a{
+    transition: ease all 0.3s;
+    transform: scale(0.8);
+
+}
+.sol-container .sol-ico:hover, .sol-ico.active {
     transition: ease all 0.3s;
     filter: grayscale(0%);
     opacity: 1;
 }
-
-
-.tippy-tooltip, .tippy-backdrop{
-	background-color: #fff;
-	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
-}
-.tippy-popper[x-placement^=top] .tippy-arrow {
-	border-top: 8px solid #fff;
-}
-.tippy-popper[x-placement^=bottom] .tippy-arrow {
-    border-bottom: 8px solid #fff;
+.sol-container .sol-ico:hover a, .sol-ico.active a{
+    transform: scale(1.2);
+    transition: ease all 0.3s;
 }
 
-.tippy-title{
-	color: #384e73;
-    font-size: 16px;
-    text-align: center;
+.sol-ico.active::before {
+    content: "";
+    position: absolute;
+    bottom: -21px;
+    left: 45%;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid #2094cc;
+    border-right: 10px solid transparent;
 }
 
-.tippy-content{
-	font-weight: 400 !important;
-	font-size: 16px;
-    color: #444;
-    text-align: left;
-    padding: 0 5px;
+#sol-tabs::after{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -21px;
+    background-color: #2094cc;
 }
-
 
 .intro-trans{
     background: url(../images/bg/intro-trans.png) center center fixed no-repeat;
@@ -2454,8 +2452,17 @@ div#mapwrapper:before {
     border: none;
 }
 
-.section-heading .nav-tabs{
+.section-heading #about-tabs{
     border-bottom: 1px solid #fff;
+}
+
+.section-heading #sol-tabs{
+    border-bottom: 1px solid #fff;
+    position: relative;
+}
+
+.section-heading #sol-tabs a{
+	padding: 0;
 }
 
 .section-heading .nav-tabs>li.active>a, .section-heading .nav-tabs>li.active>a:focus, .section-heading .nav-tabs>li.active>a:hover, .section-heading .nav-tabs.nav-justified>.active>a, .section-heading .nav-tabs.nav-justified>.active>a:focus, .section-heading .nav-tabs.nav-justified>.active>a:hover {
@@ -2479,7 +2486,11 @@ div#mapwrapper:before {
     border-right:10px solid transparent;
 }
 
-.section-heading .nav-tabs>li.active>a:focus, .section-heading .nav-tabs>li.active>a:hover, .section-heading .nav>li>a:focus, .section-heading .nav>li>a:hover {
+.section-heading .nav-tabs#sol-tabs>li.active:after {
+	border-bottom:none;
+}
+
+.section-heading .nav-tabs#about-tabs>li.active>a:focus, .section-heading .nav-tabs#about-tabs>li.active>a:hover, .section-heading .nav#about-tabs>li>a:focus, .section-heading .nav#about-tabs>li>a:hover {
     color: #fff;
     transform: scale(1.5);
     transition: ease all 0.3s;
@@ -2790,6 +2801,11 @@ div#mapwrapper:before {
 	letter-spacing: 1px;
 }
 
+#footer-carousel .carousel-indicators{
+	bottom: -25px;
+	left:20px;
+}
+
 @media all and (max-width: 768px){
 	.technology .nav-pills.nav-stacked, .technology .tab-content {
 		margin-left: 20px;
@@ -2857,7 +2873,6 @@ div#mapwrapper:before {
 	}
 	#quote-carousel .carousel-indicators li.active {
 		margin: 0 5px;
-		height: 20px;
 	}
 	.navbar{
 		padding: 5px 0;

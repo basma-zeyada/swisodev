@@ -64,8 +64,10 @@ $(window).scroll(function() {
         scroll_pos = $(this).scrollTop();
         if(scroll_pos > windowsHeight) {     	        
             $('.navbar-fixed-top').removeClass('opaqued');
+            $(".navbar-brand img").attr("src","images/logo.png")
         } else {
             $('.navbar-fixed-top').addClass('opaqued');
+            $(".navbar-brand img").attr("src","images/logo-white.png")
         }
     });
 

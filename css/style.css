@@ -2819,6 +2819,10 @@ div#mapwrapper:before {
 	border-color: #0f507c;
 }
 
+#sol-accordion h4 > a{
+	display: block;
+}
+
 @media all and (max-width: 768px){
 	.technology .nav-pills.nav-stacked, .technology .tab-content {
 		margin-left: 20px;

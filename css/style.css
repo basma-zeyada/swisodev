@@ -2498,7 +2498,7 @@ div#mapwrapper:before {
 	content: "";
 	position: absolute;
 	bottom: -1px;
-	left: 45%;
+	left: 40%;
 	border-left: 10px solid transparent;
 	border-bottom: 10px solid #fff;
 	border-right: 10px solid transparent;

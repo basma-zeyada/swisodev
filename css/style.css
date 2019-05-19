@@ -2818,8 +2818,8 @@ div#mapwrapper:before {
 }
 
 .gradient-bg{
-	background: url(../images/bg/intro.png) center center no-repeat;
-	background-size: 100%;
+	background: url(../images/bg/intro.png) center fixed no-repeat;
+	background-size: cover;
 }
 
 @media all and (max-width: 768px){
@@ -2911,7 +2911,7 @@ div#mapwrapper:before {
 		font-size: 24px !important;
 	}
 	#main-slider .carousel-content {
-    margin-top: 40%;
+    margin-top: 40% !important;
 	}
 	.navbar-inverse .navbar-nav > li > a {
     display: block;

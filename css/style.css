@@ -2400,7 +2400,7 @@ div#mapwrapper:before {
 .sol-ico.active::before {
     content: "";
     position: absolute;
-    bottom: -21px;
+    bottom: -20px;
     left: 45%;
     border-left: 10px solid transparent;
     border-bottom: 10px solid #2094cc;
@@ -2494,7 +2494,15 @@ div#mapwrapper:before {
 }
 
 
-
+#about-tabs>li.active::before {
+	content: "";
+	position: absolute;
+	bottom: -1px;
+	left: 45%;
+	border-left: 10px solid transparent;
+	border-bottom: 10px solid #fff;
+	border-right: 10px solid transparent;
+}
 
 .ellipsis {
     white-space: nowrap;
@@ -2831,7 +2839,7 @@ div#mapwrapper:before {
 	}
 	#footer-wrapper {
 			position: relative !important;
-			padding-top: 10px;
+			padding-top: 40px;
 	}
 
 	.service-block {
@@ -2917,6 +2925,9 @@ div#mapwrapper:before {
     display: block;
 		text-align: center;
 		font-size: 12px;
+	}
+	#services .row ~ .gap{
+		margin-bottom: 0;
 	}
 }
 

@@ -92,7 +92,6 @@ border-bottom: none;
 
 a:hover,
 a:focus {
-    color: #d9534f;
     text-decoration: none;
     outline: none;
 }
@@ -2039,7 +2038,7 @@ img.author-box-image {
 #quote-carousel .carousel-indicators {
     right: 50%;
     top: auto;
-    bottom: 0;
+    bottom: -30px;
     margin-right: -19px;
 }
 
@@ -2483,15 +2482,6 @@ div#mapwrapper:before {
     border:none;
 }
 
-.section-heading .nav-tabs>li.active:after {
-    content: "";
-    position:absolute;
-    bottom:-1px;
-    left:45%;
-    border-left:10px solid transparent;
-    border-bottom:10px solid #fff;
-    border-right:10px solid transparent;
-}
 
 .section-heading .nav-tabs#sol-tabs>li.active:after {
 	border-bottom:none;
@@ -2823,6 +2813,15 @@ div#mapwrapper:before {
 	display: block;
 }
 
+#sol-accordion h4 > a:hover, #sol-accordion h4 > a:focus{
+	color: #fff;
+}
+
+.gradient-bg{
+	background: url(../images/bg/intro.png) center center no-repeat;
+	background-size: 100%;
+}
+
 @media all and (max-width: 768px){
 	.technology .nav-pills.nav-stacked, .technology .tab-content {
 		margin-left: 20px;
@@ -2838,10 +2837,10 @@ div#mapwrapper:before {
 	.service-block {
 		margin-left: 15px;
 	}
-	#services .row > div {
+	/* #services .row > div {
 		width: 80%;
 		margin: 10px auto;
-	}
+	} */
 	.about-us-widget {
 		background-size: 50%;
 		height: 100px;
@@ -2892,7 +2891,7 @@ div#mapwrapper:before {
 		margin: 0 5px;
 	}
 	.navbar{
-		padding: 5px 0;
+		padding: 15px 0;
 	}
 	.navbar-brand>img {
 		width: 150px;
@@ -2917,6 +2916,7 @@ div#mapwrapper:before {
 	.navbar-inverse .navbar-nav > li > a {
     display: block;
 		text-align: center;
+		font-size: 12px;
 	}
 }
 

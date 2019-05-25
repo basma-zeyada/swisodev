@@ -2456,6 +2456,10 @@ div#mapwrapper:before {
     border-bottom: 1px solid #fff;
 }
 
+.section-heading .tab-content p{
+    text-transform: capitalize;
+}
+
 .section-heading #sol-tabs{
     border-bottom: 1px solid #fff;
 		position: relative;
@@ -2583,10 +2587,12 @@ div#mapwrapper:before {
 
 .account-type
 {
-    color: #384e73;
-    font-size: 1.3em;
-    font-weight: bold;
-		line-height: 18px;
+	color: #384e73;
+	font-size: 1em;
+	font-weight: bold;
+	display: block;
+	width: 100%;
+	text-align: left;
 }
 
 .account-link
@@ -2725,6 +2731,9 @@ div#mapwrapper:before {
 }
 .tabbable.tabs-left li .far{
 	font-size: 0.8em;
+	position: relative;
+	top: -1px;
+	padding-right: 5px;
 }
 
 .tabbable.tabs-left li {

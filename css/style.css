@@ -2839,40 +2839,8 @@ div#mapwrapper:before {
 	background-size: cover;
 }
 
-.swipeNote {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.95);
-    text-align: center;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-}
 
-.swipeImg{
-	align-self: center;
-	position: absolute;
-	-webkit-animation:linear infinite alternate;
-	-webkit-animation-name: run;
-	-webkit-animation-duration: 1.5s;
-	top:30%;
-}
 
-.swipeNote .btn{
-	display: inline-block;
-	width: fit-content;
-	align-self: center;
-}
-
-@-webkit-keyframes run {
-0% { left: 45%;}
-50%{ left : 50%;}
-100%{ left: 45%;}
-}
 
 @media all and (max-width: 768px){
 	.technology .nav-pills.nav-stacked, .technology .tab-content {
@@ -2955,6 +2923,40 @@ div#mapwrapper:before {
 	.sol-ico{
 		width: calc(100% / 8);
 	}
+	.swipeNote {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.95);
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.swipeImg{
+	align-self: center;
+	position: absolute;
+	-webkit-animation:linear infinite alternate;
+	-webkit-animation-name: run;
+	-webkit-animation-duration: 1.5s;
+	top:30%;
+}
+
+.swipeNote .btn{
+	display: inline-block;
+	width: fit-content;
+	align-self: center;
+}
+
+@-webkit-keyframes run {
+0% { left: 45%;}
+50%{ left : 50%;}
+100%{ left: 45%;}
+}
 }
 
 

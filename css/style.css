@@ -2961,6 +2961,9 @@ div#mapwrapper:before {
 
 
 @media all and (max-width: 992px){
+	.swipeNote {
+		display: none;
+	}
 	#main-slider .carousel h2 {
 		font-size: 24px !important;
 	}

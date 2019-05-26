@@ -71,6 +71,12 @@
 								</ol>
 								<!-- Carousel Slides / Quotes -->
 								<div class="carousel-inner solutions-carousel">
+									<div class="swipeNote">
+										<h3 class="white-font" style="align-self: center;float: none;width: 100%;">Swipe left/right to navigate through our solutions </h3>
+										<br/>
+										<div class="center-block swipeImg"><img src="images/swipe.png" class="img-responsive"/></div>
+										<a class="skipSwipe btn btn-outlined btn-white">Skip <i class="fa fa-arrow-right"></i></a>
+									</div>
 									<!-- Quote 1 -->
 										<div class="item active">
 											<div class="col-md-12" style=" background: url('images/solutions/bg/erp.png')">
@@ -266,8 +272,6 @@
 		<script src="js/init.js"></script>
 		<script>
 		$(function(){
-
-			
 			$('[data-toggle="tooltip"]').tooltip();
 			$('#sol-carousel').bind('mousewheel', function(e) {
 				if(e.originalEvent.wheelDelta /120 > 0) {
@@ -276,6 +280,13 @@
 						$(this).carousel('prev');
 				}
 			});
+
+			$(".skipSwipe").on("click", function(e){
+				e.preventDefault();
+				$(".swipeNote").fadeOut(500, function(){
+					(".swipeNote").remove()
+				})
+			})
 		})
 		</script>
 </body>

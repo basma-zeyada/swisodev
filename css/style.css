@@ -2843,9 +2843,7 @@ div#mapwrapper:before {
 
 
 @media all and (max-width: 768px){
-	.technology .nav-pills.nav-stacked, .technology .tab-content {
-		margin-left: 20px;
-	}
+	
 	#content-wrapper {
 		margin-bottom: 0 !important;
 	}
@@ -2881,15 +2879,7 @@ div#mapwrapper:before {
 	#main-slider .carousel .btn {
 		font-size: 12px;
 	}
-	.tab-group-title {
-		min-height: 60px !important;
-		border-bottom: 1px solid #ececec;
-		border-bottom-width: 1px;
-		border-bottom-style: solid;
-		border-bottom-color: rgb(236, 236, 236);
-		margin-bottom: 20px !important;
-		padding-bottom: 10px;
-	}
+	
 	.nav-tabs.nav-justified>li {
 		float: none;
 		display: table-cell;
@@ -2978,6 +2968,18 @@ div#mapwrapper:before {
 	}
 	#services .row ~ .gap{
 		margin-bottom: 0;
+	}
+	.tab-group-title {
+		min-height: 60px !important;
+		border-bottom: 1px solid #ececec;
+		border-bottom-width: 1px;
+		border-bottom-style: solid;
+		border-bottom-color: rgb(236, 236, 236);
+		margin-bottom: 20px !important;
+		padding-bottom: 10px;
+	}
+	.technology .nav-pills.nav-stacked, .technology .tab-content {
+		margin-left: 20px;
 	}
 }
 

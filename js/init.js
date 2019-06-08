@@ -60,9 +60,8 @@ $(window).scroll(function() {
 'use strict';
     var scroll_pos = 0;
     $(document).scroll(function() { 
-        var windowsHeight = $(window).height()/5;
         scroll_pos = $(this).scrollTop();
-        if(scroll_pos > windowsHeight) {     	        
+        if(scroll_pos > 100) {     	        
             $('.navbar-fixed-top').removeClass('opaqued');
             $(".navbar-brand img").attr("src","images/logo.png");
         } else {

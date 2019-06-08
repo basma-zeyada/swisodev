@@ -60,7 +60,7 @@ $(window).scroll(function() {
 'use strict';
     var scroll_pos = 0;
     $(document).scroll(function() { 
-        var windowsHeight = $(window).height()/4;
+        var windowsHeight = $(window).height()/5;
         scroll_pos = $(this).scrollTop();
         if(scroll_pos > windowsHeight) {     	        
             $('.navbar-fixed-top').removeClass('opaqued');

@@ -2461,7 +2461,7 @@ div#mapwrapper:before {
 }
 
 .section-heading #sol-tabs{
-    border-bottom: 1px solid #fff;
+    border-bottom: none;
 		position: relative;
 		display: inline-block;
 }
@@ -2473,6 +2473,7 @@ div#mapwrapper:before {
 
 .section-heading #sol-tabs a{
 	padding: 0;
+	border:none;
 }
 
 .section-heading .nav-tabs>li.active>a, .section-heading .nav-tabs>li.active>a:focus, .section-heading .nav-tabs>li.active>a:hover, .section-heading .nav-tabs.nav-justified>.active>a, .section-heading .nav-tabs.nav-justified>.active>a:focus, .section-heading .nav-tabs.nav-justified>.active>a:hover {
@@ -2502,7 +2503,7 @@ div#mapwrapper:before {
 	content: "";
 	position: absolute;
 	bottom: -1px;
-	left: 40%;
+	left: 45%;
 	border-left: 10px solid transparent;
 	border-bottom: 10px solid #fff;
 	border-right: 10px solid transparent;
@@ -2713,7 +2714,7 @@ div#mapwrapper:before {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	min-height: 285px;
+	min-height: 380px;
 	border-right: 1px solid #ddd;
 	color: #384e73;
 	margin-bottom: 0;

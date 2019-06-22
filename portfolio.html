@@ -267,13 +267,14 @@
 	</div>
 
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-swipe-carousel.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/plugins.js"></script>
 		<script src="js/init.js"></script>
 		<script>
 		$(function(){
 			$('[data-toggle="tooltip"]').tooltip();
-			$('#sol-carousel').bind('mousewheel', function(e) {
+			$('#sol-carousel').bind('mousewheel DOMMouseScroll', function(e) {
 				if(e.originalEvent.wheelDelta /120 > 0) {
 						$(this).carousel('next');
 				} else {
@@ -287,6 +288,10 @@
 					(".swipeNote").remove()
 				})
 			})
+
+			$('#sol-carousel').carousel().swipeCarousel({
+				sensitivity: 'high' 
+			});
 		})
 		</script>
 </body>

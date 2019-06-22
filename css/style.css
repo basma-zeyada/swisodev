@@ -2954,7 +2954,7 @@ div#mapwrapper:before {
 
 @media all and (max-width: 992px){
 	.swipeNote h3 {
-		font-size: 12px;
+		font-size: 16px;
 	}
 	.swipeImg img{
 		width: 60%;

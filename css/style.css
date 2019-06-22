@@ -2914,19 +2914,21 @@ div#mapwrapper:before {
 	.sol-ico{
 		width: calc(100% / 8);
 	}
-	.swipeNote {
-		position: fixed;
-		top: 0;
-		left: 0;
-		z-index: 1;
-		z-index: 16;
-		width: 100vw;
-		height: 100vh;
-		background-color: rgba(0, 0, 0, 0.9);
-		text-align: center;
-		display: flex;
-		flex-flow: column;
-		justify-content: center;
+	
+}
+.swipeNote {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	z-index: 16;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.9);
+	text-align: center;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
 }
 
 .swipeImg{
@@ -2945,16 +2947,17 @@ div#mapwrapper:before {
 }
 
 @-webkit-keyframes run {
-0% { left: 45%;}
-50%{ left : 50%;}
-100%{ left: 45%;}
+	0% { left: 45%;}
+	50%{ left : 50%;}
+	100%{ left: 45%;}
 }
-}
-
 
 @media all and (max-width: 992px){
-	.swipeNote {
-		display: none;
+	.swipeNote h3 {
+		font-size: 12px;
+	}
+	.swipeImg img{
+		width: 60%;
 	}
 	#main-slider .carousel h2 {
 		font-size: 24px !important;

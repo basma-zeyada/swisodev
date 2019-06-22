@@ -2959,6 +2959,10 @@ div#mapwrapper:before {
 	.swipeImg img{
 		width: 60%;
 	}
+	.swipeImg{=
+		-webkit-animation-duration: 1s;
+	}
+
 	@-webkit-keyframes run {
 		0% { left: 40%;}
 		50%{ left : 45%;}

@@ -2959,6 +2959,11 @@ div#mapwrapper:before {
 	.swipeImg img{
 		width: 60%;
 	}
+	@-webkit-keyframes run {
+		0% { left: 40%;}
+		50%{ left : 45%;}
+		100%{ left: 40%;}
+	}
 	#main-slider .carousel h2 {
 		font-size: 24px !important;
 	}

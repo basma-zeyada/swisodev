@@ -414,8 +414,12 @@
 		<script src="js/init.js"></script>
 		<script>
 			$('#about-tabs a').click(function (e) {
-				e.preventDefault()
-				$(this).tab('show')
+				$('#preloader').show();
+				e.preventDefault();
+				$(this).tab('show');
+				setTimeout(function(){
+					$('#preloader').fadeOut('slow');
+				},800)
 			})
 	</script>
 </body>

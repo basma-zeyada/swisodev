@@ -22,6 +22,7 @@
     <link rel="apple-touch-icon" sizes="72x72" href="images/ico/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" href="images/ico/apple-touch-icon-57x57.png">
 
+    <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
     jQuery(document).ready(function($){
 	'use strict';
@@ -668,14 +669,17 @@
 
 
     <script src="js/plugins.js"></script>
-    <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWDPCiH080dNCTYC-uprmLOn2mt2BMSUk&amp;sensor=true"></script>
 		<script src="js/init.js"></script>
 		<script>
-			$('#sol-tabs a').click(function (e) {
-				e.preventDefault()
-				$(this).tab('show')
+			$('.sol-ico > a').click(function (e) {
+				$('#preloader').show();
+				e.preventDefault();
+				$(this).tab('show');
+				setTimeout(function(){
+					$('#preloader').fadeOut('slow');
+				},800)
 			})
 			
 			$("#sol-accordion .panel-title a").on("click",function(e){
